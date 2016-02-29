@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Map Application</string>
+    <string name="title_activity_maps">Auto-mation</string>
+    <string name="destination">Enter destination</string>
+    <string name="autofare">Auto fare is</string>
+    <string name="defaultfare">0 km -> 0 Rs</string>
+</resources>

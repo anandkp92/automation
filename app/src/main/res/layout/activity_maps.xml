@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Es"
+    >
+    <AutoCompleteTextView
+        android:id="@+id/sourceAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter start location"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:textSize="15dip"
+
+        >
+        <requestFocus />
+    </AutoCompleteTextView>
+    <AutoCompleteTextView
+        android:id="@+id/destinationAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter destination location"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:textSize="15dip"
+        >
+    </AutoCompleteTextView>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        tools:context="com.example.aprabhu3.mapapp2.MapsActivity"
+        android:layout_weight="0.61" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+    <!--<TextView-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="start"-->
+        <!--android:textSize="37dip"-->
+        <!--android:id="@+id/autoFareLabel"-->
+        <!--android:paddingLeft="50dp"-->
+        <!--/>-->
+        <!--android:text="@string/autofare"-->
+     <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:gravity="start"
+        android:textSize="37dip"
+        android:text="@string/defaultfare"
+        android:id="@+id/autoFare" />
+    </LinearLayout>
+
+
+</LinearLayout>
